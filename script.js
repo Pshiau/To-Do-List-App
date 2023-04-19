@@ -17,3 +17,14 @@ function newItem (){
       }); //created a CSS class strike that apply line-through and add this class to <li>
         //what is the different between using toggleClass & addClass? 
 
+    //Add the delete button "X" and delete an item from the list 
+    let crossOutButton= $('<crossOutButton></crossOutButton>'); //create crossOutButton element 
+    
+    crossOutButton.append(document.createTextNode("X")); //reuse createTextNode('X') in jQuery
+    li.append(crossOutButton);//append li element to <crossOutButton> variable 
+
+    crossOutButton.on("click", function deleteListItem(){
+        li.addClass("delete");
+    });//created Class delete (display: none) from the css
+
+    
