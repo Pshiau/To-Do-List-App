@@ -10,3 +10,10 @@ function newItem (){
     $('#list').append(li);
     } //append the value of ID=list to the element <li>
 
+    // Mark an item as done;Crossing out an item from the list
+
+    li.on("dblclick", function crossOut() { //using event handling "on"
+        li.addClass("strike");
+      }); //created a CSS class strike that apply line-through and add this class to <li>
+        //what is the different between using toggleClass & addClass? 
+
