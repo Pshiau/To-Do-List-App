@@ -28,3 +28,9 @@ function newItem (){
     });//created Class delete (display: none) from the css
 
     
+     //Reordering the items 
+    $('#list').sortable();
+
+
+}
+
